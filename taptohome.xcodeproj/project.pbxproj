@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B1E1B8F219709E50076DC3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E1B8E219709E50076DC3A /* AppDelegate.swift */; };
 		9B1E1B91219709E50076DC3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E1B90219709E50076DC3A /* ViewController.swift */; };
 		9B1E1B94219709E50076DC3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B1E1B92219709E50076DC3A /* Main.storyboard */; };
 		9B1E1B96219709E60076DC3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B1E1B95219709E60076DC3A /* Assets.xcassets */; };
 		9B1E1B99219709E60076DC3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B1E1B97219709E60076DC3A /* LaunchScreen.storyboard */; };
 		9B1E1BA4219709E60076DC3A /* taptohomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E1BA3219709E60076DC3A /* taptohomeTests.swift */; };
 		9B1E1BAF219709E60076DC3A /* taptohomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E1BAE219709E60076DC3A /* taptohomeUITests.swift */; };
+		9B8FFBB7219A3EB100B6EE03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8FFBB6219A3EB100B6EE03 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 		081DDB2B860FDD8EA0C5FEE1 /* Pods-taptohome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taptohome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-taptohome/Pods-taptohome.debug.xcconfig"; sourceTree = "<group>"; };
 		1AA46211FD6FFB398A3A894F /* Pods-taptohome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taptohome.release.xcconfig"; path = "Pods/Target Support Files/Pods-taptohome/Pods-taptohome.release.xcconfig"; sourceTree = "<group>"; };
 		9B1E1B8B219709E50076DC3A /* taptohome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taptohome.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B1E1B8E219709E50076DC3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B1E1B90219709E50076DC3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9B1E1B93219709E50076DC3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B1E1B95219709E60076DC3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		9B1E1BAA219709E60076DC3A /* taptohomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = taptohomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B1E1BAE219709E60076DC3A /* taptohomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taptohomeUITests.swift; sourceTree = "<group>"; };
 		9B1E1BB0219709E60076DC3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B8FFBB6219A3EB100B6EE03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECFA1B7C53BEA4F7E7F72BAD /* libPods-taptohome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-taptohome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,12 +103,12 @@
 		9B1E1B8D219709E50076DC3A /* taptohome */ = {
 			isa = PBXGroup;
 			children = (
-				9B1E1B8E219709E50076DC3A /* AppDelegate.swift */,
 				9B1E1B90219709E50076DC3A /* ViewController.swift */,
 				9B1E1B92219709E50076DC3A /* Main.storyboard */,
 				9B1E1B95219709E60076DC3A /* Assets.xcassets */,
 				9B1E1B97219709E60076DC3A /* LaunchScreen.storyboard */,
 				9B1E1B9A219709E60076DC3A /* Info.plist */,
+				9B8FFBB6219A3EB100B6EE03 /* AppDelegate.swift */,
 			);
 			path = taptohome;
 			sourceTree = "<group>";
@@ -321,8 +321,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B8FFBB7219A3EB100B6EE03 /* AppDelegate.swift in Sources */,
 				9B1E1B91219709E50076DC3A /* ViewController.swift in Sources */,
-				9B1E1B8F219709E50076DC3A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
