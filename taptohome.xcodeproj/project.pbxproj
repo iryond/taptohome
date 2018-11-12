@@ -34,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		081DDB2B860FDD8EA0C5FEE1 /* Pods-taptohome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taptohome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-taptohome/Pods-taptohome.debug.xcconfig"; sourceTree = "<group>"; };
+		1AA46211FD6FFB398A3A894F /* Pods-taptohome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taptohome.release.xcconfig"; path = "Pods/Target Support Files/Pods-taptohome/Pods-taptohome.release.xcconfig"; sourceTree = "<group>"; };
 		9B1E1B8B219709E50076DC3A /* taptohome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taptohome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B1E1B8E219709E50076DC3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B1E1B90219709E50076DC3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,16 +49,10 @@
 		9B1E1BAA219709E60076DC3A /* taptohomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = taptohomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B1E1BAE219709E60076DC3A /* taptohomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taptohomeUITests.swift; sourceTree = "<group>"; };
 		9B1E1BB0219709E60076DC3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECFA1B7C53BEA4F7E7F72BAD /* libPods-taptohome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-taptohome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9B1E1B88219709E50076DC3A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9B1E1B9C219709E60076DC3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -74,6 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14C48DAAB973DAF67590DC5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECFA1B7C53BEA4F7E7F72BAD /* libPods-taptohome.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9B1E1B82219709E40076DC3A = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +85,8 @@
 				9B1E1BA2219709E60076DC3A /* taptohomeTests */,
 				9B1E1BAD219709E60076DC3A /* taptohomeUITests */,
 				9B1E1B8C219709E50076DC3A /* Products */,
+				E6472A37E150F6D4EE6FA170 /* Pods */,
+				14C48DAAB973DAF67590DC5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +131,15 @@
 			path = taptohomeUITests;
 			sourceTree = "<group>";
 		};
+		E6472A37E150F6D4EE6FA170 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				081DDB2B860FDD8EA0C5FEE1 /* Pods-taptohome.debug.xcconfig */,
+				1AA46211FD6FFB398A3A894F /* Pods-taptohome.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +147,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B1E1BB3219709E60076DC3A /* Build configuration list for PBXNativeTarget "taptohome" */;
 			buildPhases = (
+				14E6BA2525A5307E5B1770C2 /* [CP] Check Pods Manifest.lock */,
 				9B1E1B87219709E50076DC3A /* Sources */,
-				9B1E1B88219709E50076DC3A /* Frameworks */,
 				9B1E1B89219709E50076DC3A /* Resources */,
+				0BA8C95A297E5D1C826C778E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +266,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BA8C95A297E5D1C826C778E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-taptohome/Pods-taptohome-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-taptohome/Pods-taptohome-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		14E6BA2525A5307E5B1770C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-taptohome-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9B1E1B87219709E50076DC3A /* Sources */ = {
@@ -430,6 +495,7 @@
 		};
 		9B1E1BB4219709E60076DC3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 081DDB2B860FDD8EA0C5FEE1 /* Pods-taptohome.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +513,7 @@
 		};
 		9B1E1BB5219709E60076DC3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AA46211FD6FFB398A3A894F /* Pods-taptohome.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
