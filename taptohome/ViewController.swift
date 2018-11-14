@@ -16,36 +16,56 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // ツールバーを作成
-        let toolBar: UIView = UIView()
-        toolBar.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 45)
-        toolBar.backgroundColor = UIColor(red: 238/255, green: 238/255, blue: 238/255, alpha: 1.0)
+
+        // UIButtonのインスタンスを作成する
+        let button = UIButton(type: UIButton.ButtonType.system)
+        // ボタンを押した時に実行するメソッドを指定
+        button.addTarget(self, action: #selector(buttonEvent(_:)), for: UIControl.Event.touchUpInside)
+        // ラベルを設定する
+        button.setTitle("ボタンのテキスト", for: UIControl.State.normal)
+        // サイズを決める(自動調整)
+        button.sizeToFit()
+        // 位置を決める(画面中央)
+        button.center = self.view.center
+        // サイズを変更する
+        button.frame = CGRect(x: 0, y: 0, width: 150, height: 50)
         
-        // テキストフィールドを作成
-        let barTextField: UITextField = UITextField()
-        barTextField.frame = CGRect(x: 5, y: 5, width: self.view.frame.width - 65, height: 35)
-        barTextField.placeholder = "コメント..."
-        barTextField.borderStyle = UITextField.BorderStyle.roundedRect
+        // 任意の場所に設置する
+        button.layer.position = CGPoint(x: self.view.frame.width/2, y:200)
         
-        // ボタンを作成
-        let barButton: UIButton = UIButton(type: UIButton.ButtonType.system)
-        barButton.frame = CGRect(x: barTextField.frame.width + 10, y: 5, width: 50, height: 35)
-        barButton.setTitle("送信", for: UIControl.State.normal)
-        barButton.addTarget(self, action: #selector(buttonEvent(_:)), for: UIControl.Event.touchUpInside)
+        // 文字色を変える
+        button.setTitleColor(UIColor.white, for: UIControl.State.normal)
         
-        /*
-        // アイテムをツールバーに追加
-        toolBar.addSubview(barTextField)
-        toolBar.addSubview(barButton)
+        // 背景色を変える
+        button.backgroundColor = UIColor(red: 0.3, green: 0.7, blue: 0.6, alpha: 1)
         
-        // ツールバーをビューに設定
-        textField.inputAccessoryView = toolBar
-        textField.delegate = self
-        */
+        // 枠の太さを変える
+        button.layer.borderWidth = 1.0
+        
+        // 枠の色を変える
+        button.layer.borderColor = UIColor(red: 0.3, green: 0.6, blue: 0.5, alpha: 1).cgColor
+        
+        // 枠に丸みをつける
+        button.layer.cornerRadius = 25
+        
+        // 影の濃さを決める
+        button.layer.shadowOpacity = 0.5
+        
+        // 影のサイズを決める
+        button.layer.shadowOffset = CGSize(width: 2, height: 2)
+        
+        // ボタンが押されたときのラベル
+        button.setTitle("押された！", for: UIControl.State.highlighted)
+
+        // viewに追加する
+        self.view.addSubview(button)
+        
+
     }
     
     // ボタンタップ時に実行するメソッド
     @objc func buttonEvent(_ sender: UIButton) {
+        /*
         let camera = GMSCameraPosition.camera(withLatitude: 35.729698, longitude: 139.710962, zoom: 15.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         view = mapView
@@ -56,6 +76,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         marker.title = "Tokyo"
         marker.snippet = "Japan"
         marker.map = mapView
+        */
+        let url = NSURL(string: "http://maps.google.com/maps?f=d&daddr=Tokyo+Tower,+Tokyo,+Japan&sll=35.6586,139.7454&sspn=0.2,0.1&nav=1")
+        if UIApplication.shared.canOpenURL(url! as URL){
+            UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
+        }
     }
     
     override func didReceiveMemoryWarning() {
