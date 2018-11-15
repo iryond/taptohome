@@ -22,7 +22,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // ボタンを押した時に実行するメソッドを指定
         button.addTarget(self, action: #selector(buttonEvent(_:)), for: UIControl.Event.touchUpInside)
         // ラベルを設定する
-        button.setTitle("ボタンのテキスト", for: UIControl.State.normal)
+        button.setTitle("way to home", for: UIControl.State.normal)
         // サイズを決める(自動調整)
         button.sizeToFit()
         // 位置を決める(画面中央)
@@ -77,7 +77,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
         marker.snippet = "Japan"
         marker.map = mapView
         */
-        let url = NSURL(string: "http://maps.google.com/maps?f=d&daddr=Tokyo+Tower,+Tokyo,+Japan&sll=35.6586,139.7454&sspn=0.2,0.1&nav=1")
+        /*let url = NSURL(string: "http://maps.google.com/maps?f=d&sll=35.6586,139.7454&sspn=0.2,0.1&nav=1&directionsmode=walking")
+        let url = NSURL(string: "comgooglemaps://?saddr=2025+Garcia+Ave,+Mountain+View,+CA,+USA&daddr=Google,+1600+Amphitheatre+Parkway,+Mountain+View,+CA,+United+States&center=37.423725,-122.0877&directionsmode=walking&zoom=17")
+            
+        if UIApplication.shared.canOpenURL(url! as URL){
+            UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
+        }*/
+        
+        //let directionmode="driving"
+        let directionmode="walking"
+        //let directionmode="bicycling"
+        //let directionmode="transit"
+
+        let url = NSURL(string: "comgooglemaps://" +
+            "?daddr=Home" +
+            "&directionsmode=" + directionmode +
+            "&x-success=sourceapp://?resume=true&x-source=AirApp")
+            
         if UIApplication.shared.canOpenURL(url! as URL){
             UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
         }
