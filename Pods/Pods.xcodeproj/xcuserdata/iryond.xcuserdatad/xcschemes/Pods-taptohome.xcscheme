@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "57770A01D6062DCEF5313128C5481D6F"
+               BlueprintIdentifier = "554FD77F752A420CFDE9CBF6E99C8B89"
                BlueprintName = "Pods-taptohome"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libPods-taptohome.a">

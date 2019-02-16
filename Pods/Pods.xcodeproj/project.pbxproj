@@ -7,202 +7,308 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8FB8987C91B160E0B6434093B8214012 /* Pods-taptohome-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC84D52DD60D8612D46FDCB5CE98675 /* Pods-taptohome-dummy.m */; };
+		1A034FAE2F3BF96220962B71E9A10729 /* URLEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBBAE7793E8C38974135D928142D705 /* URLEncode.swift */; };
+		7D99C2E9523862C2101455A9C232DDE6 /* RouteParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CBFF63AC6D2084F1CAE0C4B4A78A44 /* RouteParser.swift */; };
+		877B6D1912D64EB2D169B2A337602B8E /* Pods-taptohome-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9301C98995EE164A7BF014E752A59A20 /* Pods-taptohome-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9F4FADE97C3699B0F28DABC6D777E4B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		C0BFFAC6C925DAD84EC088C662469C08 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D49A036846827AC7E73561A9186EF1A /* Direction.swift */; };
+		C31C8538BFB5F87F3E899DBEDDE1515E /* Direction-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 492370D0F0F7962E2EFDC8CB0E1D8C98 /* Direction-dummy.m */; };
+		C7108CCDF71A6BEB042F86A2E13A7F71 /* Direction-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 17EC777710BCE327B27EF149D743C345 /* Direction-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E8C95697A2CEDF7D84D1DEB6A8CE6893 /* Pods-taptohome-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ABA6A2F8E62B008427A0372F2112F2 /* Pods-taptohome-dummy.m */; };
+		FAD77D6779A0873E495F51DED0D439DA /* RouteUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A7B51BE402202FFBCCC68EB720854F /* RouteUrl.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7F3068F2AB7B8BC3A61F64C1E665E92F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 293A488B591BD293886D3AF6E74D6649;
+			remoteInfo = Direction;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		08F1229163C7F5E61C7C4B361510F11C /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
-		173C7E6C8FE432D22FABBFF7218E90C1 /* Pods-taptohome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-taptohome.release.xcconfig"; sourceTree = "<group>"; };
-		1B31087DF02E5988A61F2BF10D7AABF3 /* Pods-taptohome-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-taptohome-acknowledgements.plist"; sourceTree = "<group>"; };
-		1C6200385182862E9168588E60B1CD37 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
-		1FD11561F705BD466A0120F03135C6E6 /* Pods-taptohome-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-taptohome-acknowledgements.markdown"; sourceTree = "<group>"; };
-		23F33A2CE438AE954D0049B526A440D9 /* Pods-taptohome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-taptohome.debug.xcconfig"; sourceTree = "<group>"; };
-		3F2AF3971B4FB4558D4890A64BAF2CAC /* libPods-taptohome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-taptohome.a"; path = "libPods-taptohome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FC84D52DD60D8612D46FDCB5CE98675 /* Pods-taptohome-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-taptohome-dummy.m"; sourceTree = "<group>"; };
-		41752D04683E76563203B4DA5F0D95A3 /* Pods-taptohome-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-taptohome-resources.sh"; sourceTree = "<group>"; };
-		626A922C31CBC9E0911632FFCEBECBEA /* Pods-taptohome-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-taptohome-frameworks.sh"; sourceTree = "<group>"; };
-		70324FDF1FBB41BEA92DE76E00BD3E96 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		04ACB9AA69B02001B3197684DE810D56 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		08ABA6A2F8E62B008427A0372F2112F2 /* Pods-taptohome-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-taptohome-dummy.m"; sourceTree = "<group>"; };
+		0A3C29E8BF9917DE2342293B5632A063 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		0C4AA8D379A62779181071570324DDC1 /* libDirection.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libDirection.a; path = libDirection.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		15F1EB1AF78C7DD5C77B049C53960077 /* Pods-taptohome.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-taptohome.modulemap"; sourceTree = "<group>"; };
+		168461EDAEF1EFB9AE90C25EEB97663A /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		17EC777710BCE327B27EF149D743C345 /* Direction-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Direction-umbrella.h"; path = "../../Headers/Public/Direction/Direction-umbrella.h"; sourceTree = "<group>"; };
+		1C837460C716DEAE9B4BA87875EC3372 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		28F4D404EF4A6C7A97C71C5128234928 /* Pods-taptohome-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-taptohome-frameworks.sh"; sourceTree = "<group>"; };
+		2C4537EAE22F8CD84008109E23AC4728 /* Pods-taptohome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-taptohome.release.xcconfig"; sourceTree = "<group>"; };
+		38A7B51BE402202FFBCCC68EB720854F /* RouteUrl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouteUrl.swift; path = Pods/Direction/Source/RouteUrl.swift; sourceTree = "<group>"; };
+		3BEC034D6C1FAE2D150FE789002D4774 /* Pods-taptohome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-taptohome.debug.xcconfig"; sourceTree = "<group>"; };
+		3C8927C31C2FF724F1A1C518D45C9E42 /* Direction-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Direction-prefix.pch"; sourceTree = "<group>"; };
+		3D49A036846827AC7E73561A9186EF1A /* Direction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Direction.swift; path = Pods/Direction/Source/Direction.swift; sourceTree = "<group>"; };
+		492370D0F0F7962E2EFDC8CB0E1D8C98 /* Direction-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Direction-dummy.m"; sourceTree = "<group>"; };
+		63420E5E041EE284B98408D618172988 /* Direction.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = Direction.modulemap; path = ../../Headers/Public/Direction/Direction.modulemap; sourceTree = "<group>"; };
+		7D2B650F655C9201BE13FCC893139332 /* Pods-taptohome-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-taptohome-resources.sh"; sourceTree = "<group>"; };
+		7EBBAE7793E8C38974135D928142D705 /* URLEncode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncode.swift; path = Pods/Direction/Source/URLEncode.swift; sourceTree = "<group>"; };
+		80E04F64D42634AA6682C1D29348860D /* Pods-taptohome-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-taptohome-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9301C98995EE164A7BF014E752A59A20 /* Pods-taptohome-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-taptohome-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A65ED65616C5861E2765BDC60AAAF910 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
-		A92DFDA40F47C0FD221B2872C31099A1 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
-		B22C69ADCE7C9D529F11B17B4EF5E065 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		99CBFF63AC6D2084F1CAE0C4B4A78A44 /* RouteParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouteParser.swift; path = Pods/Direction/Source/RouteParser.swift; sourceTree = "<group>"; };
+		9BE2AAF03CCA07F4F455AF1B6F652D5B /* libPods-taptohome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-taptohome.a"; path = "libPods-taptohome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A903CD6EC992CC48869D37DC705F82B6 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		B6BDF2792D3490C39AEAF2F1502FDF2E /* Pods-taptohome-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-taptohome-acknowledgements.plist"; sourceTree = "<group>"; };
+		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E0B2DF22B789B4F8743E2BF48EA7C03D /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		EDF47D941D28E03467C9D3D7F480A41E /* Direction.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Direction.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4C66A0E355934E28ACDA15F78A77073F /* Frameworks */ = {
+		513413F27692A75305AB67E7450128D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		79BB589BCCF383FE9A4D38751A8D1811 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F4FADE97C3699B0F28DABC6D777E4B7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00B63D9B3EBC8ECAFD5DA8C24F1A42DF /* GooglePlaces */ = {
+		0128F33CE82D436B137D92D15C58D3EA /* Direction */ = {
 			isa = PBXGroup;
 			children = (
-				475420FA59EFC8377CF994A338979247 /* Frameworks */,
-				09DB508F39D8BE758EA4A7B9047268E9 /* Resources */,
+				3D49A036846827AC7E73561A9186EF1A /* Direction.swift */,
+				99CBFF63AC6D2084F1CAE0C4B4A78A44 /* RouteParser.swift */,
+				38A7B51BE402202FFBCCC68EB720854F /* RouteUrl.swift */,
+				7EBBAE7793E8C38974135D928142D705 /* URLEncode.swift */,
+				12A56C11B644176E2FF74DDC0C3898C0 /* Support Files */,
 			);
-			name = GooglePlaces;
-			path = GooglePlaces;
+			name = Direction;
+			path = Direction;
 			sourceTree = "<group>";
 		};
-		09DB508F39D8BE758EA4A7B9047268E9 /* Resources */ = {
+		09133E06BFD1679F460629F7C11DD84E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A65ED65616C5861E2765BDC60AAAF910 /* GooglePlaces.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1E16D79B4F00D9C0B1D183A30C9449E8 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				653663E8459F8A6924D853D2FEB4F30F /* Pods-taptohome */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		26C94CF6FBD559155351548F2127E7DB /* GoogleMaps */ = {
-			isa = PBXGroup;
-			children = (
-				B2F22323EA3B1ADB4F96376E3F709A68 /* Base */,
-				488E301C4ACDDA928635C4886F5F6158 /* Maps */,
-			);
-			name = GoogleMaps;
-			path = GoogleMaps;
-			sourceTree = "<group>";
-		};
-		343584E22C57489C672A8E6F731CB43A /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				1C6200385182862E9168588E60B1CD37 /* GoogleMaps.bundle */,
+				168461EDAEF1EFB9AE90C25EEB97663A /* GooglePlaces.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		385FA015FFB9210F372AB1078B856AAB /* Pods */ = {
+		12A56C11B644176E2FF74DDC0C3898C0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				26C94CF6FBD559155351548F2127E7DB /* GoogleMaps */,
-				00B63D9B3EBC8ECAFD5DA8C24F1A42DF /* GooglePlaces */,
+				63420E5E041EE284B98408D618172988 /* Direction.modulemap */,
+				EDF47D941D28E03467C9D3D7F480A41E /* Direction.xcconfig */,
+				492370D0F0F7962E2EFDC8CB0E1D8C98 /* Direction-dummy.m */,
+				3C8927C31C2FF724F1A1C518D45C9E42 /* Direction-prefix.pch */,
+				17EC777710BCE327B27EF149D743C345 /* Direction-umbrella.h */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/Direction";
 			sourceTree = "<group>";
 		};
-		475420FA59EFC8377CF994A338979247 /* Frameworks */ = {
+		31B58E79787B07881524EA3AB2A14AEE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				70324FDF1FBB41BEA92DE76E00BD3E96 /* GooglePlaces.framework */,
+				0A3C29E8BF9917DE2342293B5632A063 /* GoogleMaps.bundle */,
 			);
-			name = Frameworks;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		488E301C4ACDDA928635C4886F5F6158 /* Maps */ = {
+		3CF70844EDE310D804E11D2809FB5536 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				82CE66B3B7EC3F6274BF43A52FEEAE6E /* Frameworks */,
-				343584E22C57489C672A8E6F731CB43A /* Resources */,
-			);
-			name = Maps;
-			sourceTree = "<group>";
-		};
-		4CFA8C2E94378AFFDBA3DF92FBE7E3DC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B22C69ADCE7C9D529F11B17B4EF5E065 /* GoogleMapsBase.framework */,
+				04ACB9AA69B02001B3197684DE810D56 /* GoogleMapsBase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5B788D0B56FAC3872ED06D5646AFEA92 /* Products */ = {
+		3F83471E8A999FECFEE5FDD2E5837099 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3F2AF3971B4FB4558D4890A64BAF2CAC /* libPods-taptohome.a */,
+				A903CD6EC992CC48869D37DC705F82B6 /* GoogleMaps.framework */,
+				E0B2DF22B789B4F8743E2BF48EA7C03D /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43DCE3F9A1E7B211C5C625B9D4663B9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C4AA8D379A62779181071570324DDC1 /* libDirection.a */,
+				9BE2AAF03CCA07F4F455AF1B6F652D5B /* libPods-taptohome.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		653663E8459F8A6924D853D2FEB4F30F /* Pods-taptohome */ = {
+		44D5347904CF754D6785B84253F2574A /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				1FD11561F705BD466A0120F03135C6E6 /* Pods-taptohome-acknowledgements.markdown */,
-				1B31087DF02E5988A61F2BF10D7AABF3 /* Pods-taptohome-acknowledgements.plist */,
-				3FC84D52DD60D8612D46FDCB5CE98675 /* Pods-taptohome-dummy.m */,
-				626A922C31CBC9E0911632FFCEBECBEA /* Pods-taptohome-frameworks.sh */,
-				41752D04683E76563203B4DA5F0D95A3 /* Pods-taptohome-resources.sh */,
-				23F33A2CE438AE954D0049B526A440D9 /* Pods-taptohome.debug.xcconfig */,
-				173C7E6C8FE432D22FABBFF7218E90C1 /* Pods-taptohome.release.xcconfig */,
+				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
 			);
-			name = "Pods-taptohome";
-			path = "Target Support Files/Pods-taptohome";
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7AC1F97F7CB0AD615AC6FE930B717221 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3CF70844EDE310D804E11D2809FB5536 /* Frameworks */,
+			);
+			name = Base;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
-				385FA015FFB9210F372AB1078B856AAB /* Pods */,
-				5B788D0B56FAC3872ED06D5646AFEA92 /* Products */,
-				1E16D79B4F00D9C0B1D183A30C9449E8 /* Targets Support Files */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				9B2922ACD65879E22413112D394F1D15 /* Pods */,
+				43DCE3F9A1E7B211C5C625B9D4663B9D /* Products */,
+				FD34CED188322B979D7E6BAD0BFB83A3 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		82CE66B3B7EC3F6274BF43A52FEEAE6E /* Frameworks */ = {
+		9B2922ACD65879E22413112D394F1D15 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				08F1229163C7F5E61C7C4B361510F11C /* GoogleMaps.framework */,
-				A92DFDA40F47C0FD221B2872C31099A1 /* GoogleMapsCore.framework */,
+				0128F33CE82D436B137D92D15C58D3EA /* Direction */,
+				F130AE117AA31BE6EAB4F15801D8CAF1 /* GoogleMaps */,
+				9D581A15DC7219FE81F2D24C3A0768FD /* GooglePlaces */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9D581A15DC7219FE81F2D24C3A0768FD /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				E0287AD0991FD6B164614BB32D178CD3 /* Frameworks */,
+				09133E06BFD1679F460629F7C11DD84E /* Resources */,
+			);
+			name = GooglePlaces;
+			path = GooglePlaces;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44D5347904CF754D6785B84253F2574A /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B2F22323EA3B1ADB4F96376E3F709A68 /* Base */ = {
+		D18C3A6B8DAE77A7879F04DC346FB76D /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				4CFA8C2E94378AFFDBA3DF92FBE7E3DC /* Frameworks */,
+				3F83471E8A999FECFEE5FDD2E5837099 /* Frameworks */,
+				31B58E79787B07881524EA3AB2A14AEE /* Resources */,
 			);
-			name = Base;
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		D5EB4D97E95C08ABDDFEF44F68708983 /* Pods-taptohome */ = {
+			isa = PBXGroup;
+			children = (
+				15F1EB1AF78C7DD5C77B049C53960077 /* Pods-taptohome.modulemap */,
+				80E04F64D42634AA6682C1D29348860D /* Pods-taptohome-acknowledgements.markdown */,
+				B6BDF2792D3490C39AEAF2F1502FDF2E /* Pods-taptohome-acknowledgements.plist */,
+				08ABA6A2F8E62B008427A0372F2112F2 /* Pods-taptohome-dummy.m */,
+				28F4D404EF4A6C7A97C71C5128234928 /* Pods-taptohome-frameworks.sh */,
+				7D2B650F655C9201BE13FCC893139332 /* Pods-taptohome-resources.sh */,
+				9301C98995EE164A7BF014E752A59A20 /* Pods-taptohome-umbrella.h */,
+				3BEC034D6C1FAE2D150FE789002D4774 /* Pods-taptohome.debug.xcconfig */,
+				2C4537EAE22F8CD84008109E23AC4728 /* Pods-taptohome.release.xcconfig */,
+			);
+			name = "Pods-taptohome";
+			path = "Target Support Files/Pods-taptohome";
+			sourceTree = "<group>";
+		};
+		E0287AD0991FD6B164614BB32D178CD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C837460C716DEAE9B4BA87875EC3372 /* GooglePlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F130AE117AA31BE6EAB4F15801D8CAF1 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				7AC1F97F7CB0AD615AC6FE930B717221 /* Base */,
+				D18C3A6B8DAE77A7879F04DC346FB76D /* Maps */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		FD34CED188322B979D7E6BAD0BFB83A3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5EB4D97E95C08ABDDFEF44F68708983 /* Pods-taptohome */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7912E8D5ABD86E5190930AD969D69A17 /* Headers */ = {
+		74B3231AA65358CE8B41DE751C2C2DB1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7108CCDF71A6BEB042F86A2E13A7F71 /* Direction-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8216A2EAB86FEDE7497711E15C8FDC32 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				877B6D1912D64EB2D169B2A337602B8E /* Pods-taptohome-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		57770A01D6062DCEF5313128C5481D6F /* Pods-taptohome */ = {
+		293A488B591BD293886D3AF6E74D6649 /* Direction */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 89B8BCA8D42D81CFD4DD4E88C0DE47EB /* Build configuration list for PBXNativeTarget "Pods-taptohome" */;
+			buildConfigurationList = 536A44D339B10AA1089036F20C6297C2 /* Build configuration list for PBXNativeTarget "Direction" */;
 			buildPhases = (
-				7912E8D5ABD86E5190930AD969D69A17 /* Headers */,
-				0CE39981142B7B1C6CBC144EF66CD8C8 /* Sources */,
-				4C66A0E355934E28ACDA15F78A77073F /* Frameworks */,
+				74B3231AA65358CE8B41DE751C2C2DB1 /* Headers */,
+				1235540D460C0E3ACA795CA03C086764 /* Sources */,
+				79BB589BCCF383FE9A4D38751A8D1811 /* Frameworks */,
+				F6C7EED6DF8833F65C04EBFCDD6E2617 /* Copy generated compatibility header */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = Direction;
+			productName = Direction;
+			productReference = 0C4AA8D379A62779181071570324DDC1 /* libDirection.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		554FD77F752A420CFDE9CBF6E99C8B89 /* Pods-taptohome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0226A78FD87DBD555DDF381A80EF05EA /* Build configuration list for PBXNativeTarget "Pods-taptohome" */;
+			buildPhases = (
+				8216A2EAB86FEDE7497711E15C8FDC32 /* Headers */,
+				8BB06BFFA274F87F3CCB77BD13488626 /* Sources */,
+				513413F27692A75305AB67E7450128D1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F23F7D1DED94831D8237FDD2BB8E9BB /* PBXTargetDependency */,
+			);
 			name = "Pods-taptohome";
 			productName = "Pods-taptohome";
-			productReference = 3F2AF3971B4FB4558D4890A64BAF2CAC /* libPods-taptohome.a */;
+			productReference = 9BE2AAF03CCA07F4F455AF1B6F652D5B /* libPods-taptohome.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -222,28 +328,238 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 5B788D0B56FAC3872ED06D5646AFEA92 /* Products */;
+			productRefGroup = 43DCE3F9A1E7B211C5C625B9D4663B9D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				57770A01D6062DCEF5313128C5481D6F /* Pods-taptohome */,
+				293A488B591BD293886D3AF6E74D6649 /* Direction */,
+				554FD77F752A420CFDE9CBF6E99C8B89 /* Pods-taptohome */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F6C7EED6DF8833F65C04EBFCDD6E2617 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/Direction/Direction.modulemap",
+				"${PODS_ROOT}/Headers/Public/Direction/Direction-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/Direction-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Direction/Direction.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Direction/Direction-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+			showEnvVarsInLog = 1;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		0CE39981142B7B1C6CBC144EF66CD8C8 /* Sources */ = {
+		1235540D460C0E3ACA795CA03C086764 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FB8987C91B160E0B6434093B8214012 /* Pods-taptohome-dummy.m in Sources */,
+				C31C8538BFB5F87F3E899DBEDDE1515E /* Direction-dummy.m in Sources */,
+				C0BFFAC6C925DAD84EC088C662469C08 /* Direction.swift in Sources */,
+				7D99C2E9523862C2101455A9C232DDE6 /* RouteParser.swift in Sources */,
+				FAD77D6779A0873E495F51DED0D439DA /* RouteUrl.swift in Sources */,
+				1A034FAE2F3BF96220962B71E9A10729 /* URLEncode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB06BFFA274F87F3CCB77BD13488626 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C95697A2CEDF7D84D1DEB6A8CE6893 /* Pods-taptohome-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7F23F7D1DED94831D8237FDD2BB8E9BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Direction;
+			target = 293A488B591BD293886D3AF6E74D6649 /* Direction */;
+			targetProxy = 7F3068F2AB7B8BC3A61F64C1E665E92F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		0AA3B91655AF95B1F49159CD8085CD89 /* Debug */ = {
+		16AD6F2CEFA3A8EBB524484CAE515DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDF47D941D28E03467C9D3D7F480A41E /* Direction.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Direction/Direction-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/Direction/Direction.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Direction;
+				PRODUCT_NAME = Direction;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27C1BA1310D65FDD524B3F663CF940CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C4537EAE22F8CD84008109E23AC4728 /* Pods-taptohome.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-taptohome/Pods-taptohome.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81979C474888B7859163BCF815D5AE5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDF47D941D28E03467C9D3D7F480A41E /* Direction.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Direction/Direction-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/Direction/Direction.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Direction;
+				PRODUCT_NAME = Direction;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8DFC9796FA9E6BCF680E1E0B1780DD0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E01A293B16B4760CB77BA9C682AD48AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BEC034D6C1FAE2D150FE789002D4774 /* Pods-taptohome.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-taptohome/Pods-taptohome.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E19471FE7E209D0818DAFB22D649A6E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -296,7 +612,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -309,130 +625,32 @@
 			};
 			name = Debug;
 		};
-		623E8E684FCF38F9429E079D5AD68762 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 173C7E6C8FE432D22FABBFF7218E90C1 /* Pods-taptohome.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		8000995DA02063BF3777393CD52061DD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		E9FF6DA45E5735F1936B7F000E75A577 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23F33A2CE438AE954D0049B526A440D9 /* Pods-taptohome.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		0226A78FD87DBD555DDF381A80EF05EA /* Build configuration list for PBXNativeTarget "Pods-taptohome" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0AA3B91655AF95B1F49159CD8085CD89 /* Debug */,
-				8000995DA02063BF3777393CD52061DD /* Release */,
+				E01A293B16B4760CB77BA9C682AD48AD /* Debug */,
+				27C1BA1310D65FDD524B3F663CF940CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		89B8BCA8D42D81CFD4DD4E88C0DE47EB /* Build configuration list for PBXNativeTarget "Pods-taptohome" */ = {
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E9FF6DA45E5735F1936B7F000E75A577 /* Debug */,
-				623E8E684FCF38F9429E079D5AD68762 /* Release */,
+				E19471FE7E209D0818DAFB22D649A6E9 /* Debug */,
+				8DFC9796FA9E6BCF680E1E0B1780DD0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		536A44D339B10AA1089036F20C6297C2 /* Build configuration list for PBXNativeTarget "Direction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16AD6F2CEFA3A8EBB524484CAE515DF2 /* Debug */,
+				81979C474888B7859163BCF815D5AE5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

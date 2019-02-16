@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8669A3B68EDFC30F19FC2193 /* libPods-taptohome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECFA1B7C53BEA4F7E7F72BAD /* libPods-taptohome.a */; };
 		9B1E1B91219709E50076DC3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E1B90219709E50076DC3A /* ViewController.swift */; };
 		9B1E1B94219709E50076DC3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B1E1B92219709E50076DC3A /* Main.storyboard */; };
 		9B1E1B96219709E60076DC3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B1E1B95219709E60076DC3A /* Assets.xcassets */; };
@@ -64,6 +65,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3F1EA56A5C130059A7AB1DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8669A3B68EDFC30F19FC2193 /* libPods-taptohome.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +160,7 @@
 				9B1E1B87219709E50076DC3A /* Sources */,
 				9B1E1B89219709E50076DC3A /* Resources */,
 				0BA8C95A297E5D1C826C778E /* [CP] Copy Pods Resources */,
+				B3F1EA56A5C130059A7AB1DB /* Frameworks */,
 			);
 			buildRules = (
 			);

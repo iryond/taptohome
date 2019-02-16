@@ -1,4 +1,6 @@
 PODS:
+  - Direction (1.3.3):
+    - GoogleMaps
   - GoogleMaps (2.7.0):
     - GoogleMaps/Maps (= 2.7.0)
   - GoogleMaps/Base (2.7.0)
@@ -8,18 +10,21 @@ PODS:
     - GoogleMaps/Base (= 2.7.0)
 
 DEPENDENCIES:
+  - Direction
   - GoogleMaps
   - GooglePlaces
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Direction
     - GoogleMaps
     - GooglePlaces
 
 SPEC CHECKSUMS:
+  Direction: 52886a470928fdc1d307e874d1dddfe8b8bd44bc
   GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
   GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
 
-PODFILE CHECKSUM: e2ad8126e7b0c9ccc4cb2fc389303bbd40e4b3fa
+PODFILE CHECKSUM: 4967fdf50abc48ffbe6480893e52b6bf63293ee0
 
 COCOAPODS: 1.5.3

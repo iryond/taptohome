@@ -8,14 +8,53 @@
 
 import UIKit
 import GoogleMaps
+import Direction
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController, UITextFieldDelegate, GMSMapViewDelegate {
 
-    @IBOutlet weak var textField: UITextField!
+    var mapView:GMSMapView!
+    var coordinates: [CLLocationCoordinate2D] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // Do any additional setup after loading the view, typically from a nib.
+        //ボタンの表記を配列で作成
+        let arrayDestination = ["Home","Office"]
+        //UISegmentedControlのインスタンス作成
+        let segmentDestination: UISegmentedControl = UISegmentedControl(items: arrayDestination as [AnyObject])
+        // サイズを決める(自動調整)
+        segmentDestination.sizeToFit()
+        // 位置を決める(画面中央)
+        segmentDestination.center = self.view.center
+        // サイズを変更する
+        segmentDestination.frame = CGRect(x: 0, y: 0, width: 150, height: 50)
+        //segmentの位置を設定
+        segmentDestination.center = CGPoint(x: self.view.frame.width / 2, y: self.view.frame.height / 2.5)
+        //デフォルト値を自宅に設定
+        segmentDestination.selectedSegmentIndex=0
+        //ボタンを押した時の処理を設定
+        segmentDestination.addTarget(self, action: #selector(changeDst(_:)), for: UIControl.Event.valueChanged)
+        // viewに追加する
+        self.view.addSubview(segmentDestination)
+
+        //ボタンの表記を配列で作成
+        let arrayMode = ["Car","Train","Walking"]
+        //UISegmentedControlのインスタンス作成
+        let segmentMode: UISegmentedControl = UISegmentedControl(items: arrayMode as [AnyObject])
+        // サイズを決める(自動調整)
+        segmentMode.sizeToFit()
+        // 位置を決める(画面中央)
+        segmentMode.center = self.view.center
+        // サイズを変更する
+        segmentMode.frame = CGRect(x: 0, y: 0, width: 300, height: 50)
+        //segmentの位置を設定
+        segmentMode.center = CGPoint(x: self.view.frame.width / 2, y: self.view.frame.height / 2)
+        //デフォルト値を車に設定
+        segmentMode.selectedSegmentIndex=0
+        //ボタンを押した時の処理を設定
+        segmentMode.addTarget(self, action: #selector(changeMode(_:)), for: UIControl.Event.valueChanged)
+        // viewに追加する
+        self.view.addSubview(segmentMode)
 
         // UIButtonのインスタンスを作成する
         let button = UIButton(type: UIButton.ButtonType.system)
@@ -28,77 +67,71 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // 位置を決める(画面中央)
         button.center = self.view.center
         // サイズを変更する
-        button.frame = CGRect(x: 0, y: 0, width: 150, height: 50)
-        
+        button.frame = CGRect(x: 0, y: 0, width: 300, height: 50)
         // 任意の場所に設置する
-        button.layer.position = CGPoint(x: self.view.frame.width/2, y:200)
-        
+        button.layer.position = CGPoint(x: self.view.frame.width / 2, y: self.view.frame.height / 1.5)
         // 文字色を変える
         button.setTitleColor(UIColor.white, for: UIControl.State.normal)
-        
         // 背景色を変える
         button.backgroundColor = UIColor(red: 0.3, green: 0.7, blue: 0.6, alpha: 1)
-        
         // 枠の太さを変える
         button.layer.borderWidth = 1.0
-        
         // 枠の色を変える
         button.layer.borderColor = UIColor(red: 0.3, green: 0.6, blue: 0.5, alpha: 1).cgColor
-        
         // 枠に丸みをつける
         button.layer.cornerRadius = 25
-        
         // 影の濃さを決める
         button.layer.shadowOpacity = 0.5
-        
         // 影のサイズを決める
         button.layer.shadowOffset = CGSize(width: 2, height: 2)
-        
         // ボタンが押されたときのラベル
         button.setTitle("押された！", for: UIControl.State.highlighted)
 
         // viewに追加する
         self.view.addSubview(button)
-        
 
+    }
+    @objc func changeDst(_ sender: UISegmentedControl) {
+        let myVar = GlobalVar.shared
+        switch sender.selectedSegmentIndex {
+        case 0:
+            myVar.directionDst="Home"
+        case 1:
+            myVar.directionDst="Work"
+        default:
+            print("")
+        }
+    }
+    @objc func changeMode(_ sender: UISegmentedControl) {
+        let myVar = GlobalVar.shared
+        switch sender.selectedSegmentIndex {
+        case 0:
+            myVar.directionMode="driving"
+        case 1:
+            myVar.directionMode="transit"
+        case 2:
+            myVar.directionMode="walking"
+        default:
+            print("")
+        }
     }
     
     // ボタンタップ時に実行するメソッド
     @objc func buttonEvent(_ sender: UIButton) {
-        /*
-        let camera = GMSCameraPosition.camera(withLatitude: 35.729698, longitude: 139.710962, zoom: 15.0)
-        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-        view = mapView
-        
-        // Creates a marker in the center of the map.
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: 35.729698, longitude: 139.710962)
-        marker.title = "Tokyo"
-        marker.snippet = "Japan"
-        marker.map = mapView
-        */
-        /*let url = NSURL(string: "http://maps.google.com/maps?f=d&sll=35.6586,139.7454&sspn=0.2,0.1&nav=1&directionsmode=walking")
-        let url = NSURL(string: "comgooglemaps://?saddr=2025+Garcia+Ave,+Mountain+View,+CA,+USA&daddr=Google,+1600+Amphitheatre+Parkway,+Mountain+View,+CA,+United+States&center=37.423725,-122.0877&directionsmode=walking&zoom=17")
+        let myVar = GlobalVar.shared
+        let testURL = URL(string: "comgooglemaps-x-callback://")!
+        if UIApplication.shared.canOpenURL(testURL) {
+            let directionsRequest = "comgooglemaps-x-callback://" +
+                "?daddr=" + myVar.directionDst +
+                "&directionsmode=" + myVar.directionMode +
+            "&x-success=sourceapp://?resume=true&x-source=AirApp"
             
-        if UIApplication.shared.canOpenURL(url! as URL){
-            UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
-        }*/
-        
-        //let directionmode="driving"
-        let directionmode="walking"
-        //let directionmode="bicycling"
-        //let directionmode="transit"
-
-        let url = NSURL(string: "comgooglemaps://" +
-            "?daddr=Home" +
-            "&directionsmode=" + directionmode +
-            "&x-success=sourceapp://?resume=true&x-source=AirApp")
-            
-        if UIApplication.shared.canOpenURL(url! as URL){
-            UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
+            let directionsURL = URL(string: directionsRequest)!
+            UIApplication.shared.open(directionsURL, options: [:], completionHandler: nil)
+        } else {
+            NSLog("Can't use comgooglemaps-x-callback:// on this device.")
         }
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
